@@ -1,2 +1,2 @@
-const name = 'yang'
-console.log('name->', name)
+import { injectJsError } from './lib/jsError';
+injectJsError();

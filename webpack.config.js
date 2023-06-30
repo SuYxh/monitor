@@ -10,6 +10,9 @@ module.exports = {
         filename: 'monitor.js'//文件名
     },
     devServer: {
+        client: {
+            overlay: false,
+        },
         static: {
             directory: path.join(__dirname, 'dist'),
         },

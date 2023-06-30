@@ -2,9 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   html-webpack-plugin: ^5.5.3
+  user-agent: ^1.0.4
   webpack: ^5.88.1
   webpack-cli: ^5.1.4
   webpack-dev-server: ^4.15.1
+
+dependencies:
+  user-agent: 1.0.4
 
 devDependencies:
   html-webpack-plugin: 5.5.3_webpack@5.88.1
@@ -2094,6 +2098,10 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
+
+  /user-agent/1.0.4:
+    resolution: {integrity: sha512-NPTnJ89e6ttUK+Q3ZQ6aMFo4+4HAdvsb39IypyRw/bPjE/F8TjeVpB8uqFPnUCVbI6247qPryd8OLpkEYuOwWg==}
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
