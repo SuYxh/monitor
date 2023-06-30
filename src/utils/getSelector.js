@@ -19,6 +19,7 @@ export default function (pathsOrTarget) {
         return getSelectors(pathsOrTarget);
     } else {//也有可有是一个对象 
         let path = [];
+        // 查找其父元素
         while (pathsOrTarget) {
             path.push(pathsOrTarget);
             pathsOrTarget = pathsOrTarget.parentNode;

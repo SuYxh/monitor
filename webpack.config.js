@@ -30,6 +30,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({//自动打包出HTML文件的
             template: './index.html',
+            scriptLoading: 'blocking',
+            inject: 'head',
         })
     ]
 
