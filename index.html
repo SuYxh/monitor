@@ -53,13 +53,13 @@
             let start = Date.now();
             while ((Date.now() - start) < 1000) { }
         }
-        setTimeout(() => {
-            let content = document.getElementsByClassName('content')[0];
-            let h1 = document.createElement('h1');
-            h1.innerHTML = '我是这个页面中最有意义的内容';
-            h1.setAttribute('elementtiming', 'meaningful');
-            content.appendChild(h1);
-        }, 2000);
+        // setTimeout(() => {
+        //     let content = document.getElementsByClassName('content')[0];
+        //     let h1 = document.createElement('h1');
+        //     h1.innerHTML = '我是这个页面中最有意义的内容';
+        //     h1.setAttribute('elementtiming', 'meaningful');
+        //     content.appendChild(h1);
+        // }, 2000);
     </script>
     <!-- 出发资源加载错误 -->
     <!-- <script src="/someError.js"></script> -->
