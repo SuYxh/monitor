@@ -13,9 +13,34 @@
             <button id="clickBtn" onclick="clickMe()">点我</button>
             <button id="clickBtn2" onclick="errorClick()">点击抛出错误</button>
             <button id="clickBtn3" onclick="promiseErrorClick()">点击抛出Promise错误</button>
+            <button id="clickBtn4" onclick="sendSuccess()">ajax成功请求</button>
+            <button id="clickBtn5" onclick="sendError()">ajax失败请求</button>
         </div>
     </div>
     <script>
+        function sendSuccess() {
+            console.log('sendSuccess')
+            let xhr = new XMLHttpRequest
+            xhr.open('GET', '/success', true)
+            xhr.responseType = 'json'
+            xhr.onload = function () {
+                console.log('success', xhr.response)
+            }
+            xhr.send()
+        }
+        function sendError() {
+            console.log('sendError')
+            let xhr = new XMLHttpRequest
+            xhr.open('POST', '/error', true)
+            xhr.responseType = 'json'
+            xhr.onload = function () {
+                console.log('success', xhr.response)
+            }
+            xhr.onerror = function (error) {
+                console.log('error', error)
+            }
+            xhr.send("name=yxh")
+        }
         function errorClick() {
             window.someVar.age = 'error'
         }
@@ -36,7 +61,8 @@
             content.appendChild(h1);
         }, 2000);
     </script>
-    <script src="/someError.js"></script>
+    <!-- 出发资源加载错误 -->
+    <!-- <script src="/someError.js"></script> -->
 </body>
 
 </html>
